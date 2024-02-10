@@ -1,0 +1,51 @@
+#giftBoxContainer {
+    position: fixed;
+    bottom: 20px;
+    left: 45%;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+#giftBoxImage {
+    width: 200px;
+    height: auto;
+    transition: opacity 0.5s ease-in-out
+}
+
+#giftBoxContainer:hover {
+    transform: scale(1.1);
+    cursor: url("../cursor/help.cur"), auto;
+}
+
+#rose {
+    position: fixed;
+    bottom: 10%;
+    left: 45%;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+#rose img {
+    width: 300px;
+    height: auto;
+    transition: opacity 1s ease-in-out;
+}
+
+#rose:hover {
+    transform: rotate(10);
+    cursor: url("../cursor/help.cur"),auto;
+}
+
+.falling-petal {
+    position: absolute;
+    width: 20px;
+    height: auto;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(720deg);
+    }
+}
