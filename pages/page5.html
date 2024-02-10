@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Surprise - Page 4</title>
+    <link rel="stylesheet" href="./page_styler.css">
+    <link rel="stylesheet" href="../assets/css/toy.css">
+</head>
+<body class="pages">
+    <div class="bg"></div>
+    <div class="custom-heading">
+        Day - 4 : <span style="color: #e63946; cursor:url('../assets/cursor/link.cur'),auto;" onclick="toy()">Teddy</span> Day
+    <span style="position: fixed; top: -80%; left: 50%; width: 2px; height: 200%; background-color: white;background: linear-gradient(to bottom, transparent, whitesmoke, transparent); transform: translateX(-50%) rotate(90deg);"></span>
+    </div>
+    <div style="font-size: 28px; margin-top:40px;">
+        Here's a teddy for my cutu 😘 <span id="Hide">(But where?)</span>
+    </div>
+    <div id="TEXT" style="visibility: hidden;">
+        Enjoy playing :)
+    </div>
+    <div id="container" style="visibility: hidden;">
+        <img id="interactiveImage" src="../assets/image/teddy.png" alt="Interactive Image">
+    </div>
+    
+    <div id="nextButton" onclick="gotoPage6()">
+        <img src="../assets/image/NEXT.png" alt="Next Page">
+    </div>
+    <div id="backButton" onclick="gotoPage4from5()">
+        <img src="../assets/image/BACK.png" alt="Go Back">
+    </div>
+    <script src="../script.js"></script>
+    <script src="../pages/page5.js"></script>
+    <div class="star-field">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+    </div>
+</body>
+</html>

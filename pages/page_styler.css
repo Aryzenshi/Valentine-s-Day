@@ -1,0 +1,128 @@
+/* style2.css */
+@import url(../assets/css/background.css);
+
+@font-face {
+    font-family: 'ValentineHead';
+    src: url('../assets/font/head/ValentineCute.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ValentineBody';
+    src: url('../assets/font/body/Dutch\ Tulips\ -\ TTF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sig';
+    src: url('../assets/font/signature/Honeymoon\ Avenue\ Script\ Demo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'ValentineBody', 'Arial', sans-serif;
+    background-color: #f9f3f3;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    flex-direction: column;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    cursor: url('./assets/cursor/normal.cur'), auto;
+    overflow: hidden;
+}
+
+body.page-transition {
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+#backButton {
+    position: fixed;
+    top: 20px;
+    left: 1%;
+    transition: transform 0.5s ease-in-out;
+}
+
+#backButton img {
+    width: 50px;
+    height: auto;
+}
+
+#backButton:hover {
+    transform: scale(0.8);
+    cursor: url("../assets/cursor/link.cur"),auto;
+}
+
+#nextButton {
+    position: fixed;
+    bottom: 20px;
+    right: 1%;
+    transition: transform 0.5s ease-in-out;
+    visibility: hidden;
+}
+
+#nextButton img {
+    width: 50px;
+    height: auto;
+}
+
+#nextButton:hover {
+    transform: scale(0.8);
+    cursor: url("../assets/cursor/link.cur"),auto;
+}
+
+#homeButton {
+    position: fixed;
+    top: 20px;
+    right: 1%;
+    transition: transform 0.5s ease-in-out;
+    visibility: hidden;
+}
+
+#homeButton img {
+    width: 50px;
+    height: auto;
+}
+
+#homeButton:hover {
+    transform: scale(0.8);
+    cursor: url("../assets/cursor/link.cur"),auto;
+}
+
+.custom-heading {
+    font-size: 52px;
+    font-family: 'ValentineHead', sans-serif;
+    color: whitesmoke;
+    margin-top: 20px;
+}
+
+.pages {
+    font-family: 'ValentineBody', 'Arial', sans-serif;
+    background-color: #f9f3f3;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    flex-direction: column;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    cursor: url('../assets/cursor/normal.cur'), auto;
+}
+
+.page-content {
+    font-size: xx-large;
+    width: 70%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.body-clicked {
+    cursor: url('../assets/cursor/link.cur'), auto;
+}
