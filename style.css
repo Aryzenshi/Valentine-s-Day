@@ -1,0 +1,69 @@
+/* style.css */
+@import url(./assets/css/background.css);
+
+@font-face {
+    font-family: 'ValentineHead';
+    src: url('./assets/font/head/ValentineCute.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ValentineBody';
+    src: url('./assets/font/body/Dutch\ Tulips\ -\ TTF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sig';
+    src: url('./assets/font/signature/Honeymoon\ Avenue\ Script\ Demo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'ValentineBody', 'Arial', sans-serif;
+    background-color: #f9f3f3;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    cursor: url('./assets/cursor/normal.cur'), auto;
+    transition: transform 2s ease-in-out;
+}
+
+body.page-transition {
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+#scrollImage {
+    width: 100px;
+    height: 90px;
+    filter: blur(3px);
+    position: fixed;
+    bottom: 20px;
+    left: 47%;
+    transition: transform 0.2s ease-in-out;
+}
+
+#scrollImage:hover {
+    transform: scale(1.1);
+    cursor: url("./assets/cursor/help.cur"),auto;
+}
+
+.custom-heading {
+    font-size: 52px;
+    font-family: 'ValentineHead', sans-serif;
+    color: #e63946;
+    margin-top: 20px;
+}
+
+.body-clicked {
+    cursor: url('./assets/cursor/link.cur'), auto;
+}
