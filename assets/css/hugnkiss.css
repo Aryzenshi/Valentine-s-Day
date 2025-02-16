@@ -20,7 +20,7 @@
 
 .slideshow-content {
     white-space: nowrap;
-    animation: scroll 30s linear infinite;
+    animation: scroll 15s linear infinite;
 }
 
 .slideshow-background {
@@ -39,7 +39,7 @@
 
 #heart-button {
     position: absolute;
-    bottom: 200px;
+    bottom: 20%;
     background-color: #ff4d4d;
     color: white;
     border: none;
@@ -66,7 +66,7 @@
     opacity: 1;
     }
     100% {
-    transform: translateY(-300px) rotate(360deg);
+    transform: translateY(-400px) rotate(360deg);
     opacity: 0;
     }
 }
